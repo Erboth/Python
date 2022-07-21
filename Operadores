@@ -1,0 +1,11 @@
+print (3+2)
+# operadores 
+print (3+2-1)
+print ((1+6)*5)
+print ((6*7)/2)
+
+# operador exponencial 
+print (2**5)
+# operador de cociente y resto
+print (20//4) # aquí cociente
+print (20%6) # aquí me da el resto
