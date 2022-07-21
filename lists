@@ -1,0 +1,44 @@
+# Lists
+
+
+# 1º parte conceptos básicos
+# - explicación
+# - índice, valor + ejemplo
+listaCompra= ["manzana", "peras", "platanos", 1, False, 1.0, True, "lejia", "pipas"]
+print (listaCompra)
+# - crear listas vacías
+empty_list=[]
+print (empty_list)
+# - lista con diferentes objetos
+listaConOtraLista=["string", 0, listaCompra]
+
+# 2º parte operadores que nos permiten manipular los datos de una lista 
+# - get, editar, eliminar, añadir
+print(listaConOtraLista[2][2]) #coger el indice 2 de listaConOtraLista y el indice 2 de listaCompra
+listaCompra[7]= "lavavajillas" #editar valor de una lista
+print(listaCompra [7])
+listaCompra.remove("platanos") #borrar un elemento de la lista
+print(listaCompra)
+listaCompra.append("cerezas") #añadir un elemento
+print(listaCompra)
+# tamaño de la lista 
+print(len(listaCompra))
+# insert 
+listaCompra.insert(2,"platanos de canarias") #añadir un elemento
+print(listaCompra)
+# index 
+print(listaCompra.index("platanos de canarias"))
+# max 
+list2= [1,2,3,1,1,1]
+print (max(list2))
+# min 
+print (min(list2))
+# count 
+print (list2.count(1))
+# reverses
+listaCompra.reverse()
+print (listaCompra)
+# - operaciones matemáticas sobre la lista 
+print (list2 *3)
+# - operador in ya visto en bucles for
+print("pipas" in listaCompra)
