@@ -1,0 +1,20 @@
+numEntero = 5
+numReal = 5.1
+textoPython = "Hola"
+
+# Booleano
+
+isSwitchAct = True;
+
+#Ejemplo
+
+nameHuman = str(input("Dime tu nombre: "))
+ageHuman = int(input("Dime tu edad: "))
+msgWellcome = "Bienvenido " +nameHuman+" " + "con edad ="
+# print (msgWellcome + ageHuman) error no puede concatenar num con txt
+print (msgWellcome + " " + str(ageHuman) + "\nEsto es un salto de línea")
+
+res = numEntero + numReal;
+
+numEntero+= numReal;
+res = numEntero;
