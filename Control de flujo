@@ -1,0 +1,53 @@
+# ¿En qué se basan las sentencias de control de flujo?
+from ast import For
+from itertools import count
+
+
+print("¿Quieres acabar con el mundo?\n")
+
+# .-sentencias if
+# if condicionante:
+#     sentencias
+# .-sentencias else, si ocurre lo contrario
+# .-ejemolos donde se muestre un ejemplo y combinación con operadores
+inputUser = input()
+if(inputUser == "si" or inputUser == "Si"):
+    print("Lanzando misil...")
+elif(inputUser == "no" or inputUser == "No"):
+    print("Cancelando lanzamiento")
+else:
+    print("Comando no reconocido")
+
+# .-for loops
+
+listaCompra = ["manzanas", "peras", "platanos"]
+for frutaDeLaLista in listaCompra:
+    print(frutaDeLaLista + "\n") # recorrer la lista y mostrarla en pantalla con salto de línea
+
+# .-while loops
+
+count= 1
+while count <=5:
+    print(count)
+    count +=1
+
+# .-switch, interruptos con varias salidas
+print("Elige un número para saber que día de la semana es \n")
+diaElegido= int(input())
+
+if diaElegido ==1:
+    print ("Lunes")
+elif diaElegido ==2:
+    print ("Martes")
+elif diaElegido ==3:
+    print ("Miercoles")
+elif diaElegido ==4:
+    print ("Jueves")
+elif diaElegido ==5:
+    print ("Viernes")
+elif diaElegido ==6:
+    print ("sabado")
+elif diaElegido ==7:
+    print ("Domingo")
+else:
+    print ("No existe")
