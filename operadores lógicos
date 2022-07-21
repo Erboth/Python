@@ -1,0 +1,20 @@
+# == != < > >= <= (operadores por simbolo)
+
+print (7==8) #igualad
+print ("casa"!="perro") #desigualdad
+print (7<8) #menor que
+print (8>7) #mayor que
+print (8>=7) #mayor o igual que
+print (7<=8) #menor o igual que
+
+# and, or, y not (operadores por palabra)
+
+print ("casa"=="casa" and 7>8)# y
+print ("casa"=="casa" or 7<8) # o
+val= False
+print (not val) #invierte lo que tiene a la derecha
+
+# Fusión de estos operadores
+
+print (not("casa"=="casa" and 7>8))
+print (("casa"=="casa" and 7>8) or ("casa"=="casa" or 7<8))
