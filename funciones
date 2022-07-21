@@ -1,0 +1,25 @@
+#FUNCONES: def nombre_funcion (parametro1, parametro2)
+
+#Ejemplo de las conbinaciones
+itemsAvailableList= ["sartén", "hacha", "ruedas", "té"]
+
+# no param de entrada, no devuelve nada
+def welcomeMessage():
+    print ("Bienvenido a la tienda, cargando información...")
+    print ("por favor, introduzca su nombre de usuario")
+
+# si param de entrada, no devuelve nada
+def requestUsername (username):
+    print ("nombre de usuario disponible, "+username)
+
+#si ppram de entrada, si devuelve valor
+def isAvailable (item):
+    return item in itemsAvailableList
+
+# main
+welcomeMessage()
+userName = input()
+requestUsername(userName)
+print("por favor, introduzca el producto que desea comprobar: ")
+userBuy= input()
+print (isAvailable(userBuy))
